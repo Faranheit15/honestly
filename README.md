@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Honestly
+
+Honestly is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). It provides a platform for receiving anonymous feedback/messages, tailored specifically for GenZ audiences. This project integrates technologies such as Tailwind CSS, Shadcn, MongoDB, and Zod for a seamless and attractive user experience.
+
+## Features
+
+- **Anonymous Feedback**: Collect feedback without requiring users to identify themselves.
+- **Real-Time Validation**: Utilizes Zod for client-side data validation to ensure data integrity before it hits your database.
+- **Modern Design**: Built with Tailwind for a responsive and modern interface.
+- **Scalable Backend**: MongoDB for flexible, scalable data storage.
 
 ## Getting Started
 
-First, run the development server:
+To get the server running locally:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repo
+   ```bash
+   git clone https://github.com/Faranheit15/honestly.git
+   cd honestly
+   ```
+2. Install the dependencies
+   ```bash
+   npm install
+   # or
+   yarn
+   # or
+   pnpm install
+   # or
+   bun install
+   ```
+3. Run the development server
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   # or
+   bun dev
+   ```
+4. Open http://localhost:3000 to view it in the browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Folder Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<ul>
+    <li>src/model: Contains the MongoDB data models
+    <li>src/schemas: Contains Zod schemas for validation of various forms and data entries:
+    <ol>
+        <li><strong>signUpSchema.ts</strong>: Validates sign-up form data.</li>
+        <li><strong>verifySchema.ts</strong>: Validates the OTP received during sign-up.</li>
+        <li><strong>signInSchema.ts</strong>: Validates sign-in form data.</li>
+        <li><strong>acceptMessageSchema.ts</strong>: Validates data when accepting messages.</li>
+        <li><strong>messageSchema.ts</strong>: Additional validations for message data.
+        </li>
+    </ol>
+    </li>
+</ul>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Libraries used
 
-## Learn More
+<ul>
+    <li><strong>Zod</strong>: TypeScript-first schema validation with static type inference to simplify and ensure reliable data validation.</li>
+    <li><strong>Tailwind CSS</strong>: A utility-first CSS framework for rapidly building custom designs.</li>
+    <li><strong>Shadcn</strong>: (Please provide more information about this library as it's not commonly known.)</li>
+    <li><strong>MongoDB</strong>: NoSQL database for handling large volumes of data in a flexible, scalable way.</li>
+</ul>
 
-To learn more about Next.js, take a look at the following resources:
+## Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Still a work in progress, no need to contribute :)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
+This project is licensed under the MIT License - see the LICENSE.md file for details.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<hr>
+Built with 💜 for GenZ by Faran Mohammad<br><br>
+This `README.md` file provides a comprehensive overview of your project, how to get it started, and the libraries used, along with a basic folder structure and licensing information. Adjust it as necessary to fit the exact details and additional sections you may want to include.
