@@ -43,6 +43,11 @@ To get the server running locally:
 ## Folder Structure
 
 <ul>
+    <li>email
+        <ol>
+            <li><strong>VerificationEmail.tsx</strong>: This contains the OTP email template made using React Emails package. While registering to the app, an OTP will be sent to the user's email to verify.</li>
+        </ol>
+    </li>
     <li>src/model: Contains the MongoDB data models
     <li>src/schemas: Contains Zod schemas for validation of various forms and data entries:
     <ol>
@@ -54,6 +59,17 @@ To get the server running locally:
         </li>
     </ol>
     </li>
+    <li>src/lib: Contains the external library configurations:
+    <ol>
+        <li><strong>dbConnect.ts</strong>: Contains the configuration settings for MongoDB.</li>
+        <li><strong>resend.ts</strong>: Contains the configuration settings for the Resend API.</li>
+    </ol>
+    </li>
+    <li>src/app/api: Contains the <strong>Backend Code</strong>:
+    <ol>
+        <li><strong>sign-up</strong>: Contains the API code for signing up a new user.</li>
+    </ol>
+    </li>
 </ul>
 
 ## Libraries used
@@ -61,8 +77,11 @@ To get the server running locally:
 <ul>
     <li><strong>Zod</strong>: TypeScript-first schema validation with static type inference to simplify and ensure reliable data validation.</li>
     <li><strong>Tailwind CSS</strong>: A utility-first CSS framework for rapidly building custom designs.</li>
-    <li><strong>Shadcn</strong>: (Please provide more information about this library as it's not commonly known.)</li>
+    <li><strong>Shadcn</strong>: Beautifully designed components that you can copy and paste into your apps.</li>
     <li><strong>MongoDB</strong>: NoSQL database for handling large volumes of data in a flexible, scalable way.</li>
+    <li><strong>Resend</strong>: Resend is the email API for developers.</li>
+    <li><strong>Bcryptjs</strong>: A library to help you hash passwords.</li>
+    <li><strong>React Email</strong>: A collection of high-quality, unstyled components for creating beautiful emails using React and TypeScript.</li>
 </ul>
 
 ## Contributing
