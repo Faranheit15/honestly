@@ -82,6 +82,7 @@ To get the server running locally:
     <li><strong>Resend</strong>: Resend is the email API for developers.</li>
     <li><strong>Bcryptjs</strong>: A library to help you hash passwords.</li>
     <li><strong>React Email</strong>: A collection of high-quality, unstyled components for creating beautiful emails using React and TypeScript.</li>
+    <li><strong>Next Auth</strong>: Next JS authentication provider.</li>
 </ul>
 
 ## Contributing
