@@ -82,6 +82,7 @@ export async function GET(request: Request) {
       {
         success: true,
         isAcceptingMessages: foundUser.isAcceptingMessage,
+        foundUser,
       },
       { status: 200 }
     );
